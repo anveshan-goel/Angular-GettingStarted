@@ -1,0 +1,14 @@
+<!-- <h1>Interests</h1> -->
+<career-classification-top-nav></career-classification-top-nav>    
+<section>
+    <aside class="career-classification" *ngFor='let interest of interests'>
+        <div class="content {{ interest.name }}">
+            <h3><a (click)="clickInterestClassification()" href="#">{{ interest.name }}</a></h3>
+            <p>{{ interest.about }}</p>
+        </div>
+    </aside>
+</section>
+    
+<div class='container'>
+    <router-outlet></router-outlet>
+</div>    
