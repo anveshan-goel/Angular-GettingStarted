@@ -1,0 +1,10 @@
+<career-classification-top-nav></career-classification-top-nav>    
+
+<section>
+        <aside class="career-classification" *ngFor='let stream of streams'>
+            <div class="content {{ stream.id }}">
+                <h3><a (click)="clickstreamClassification()" href="#">{{ stream.name }}</a></h3>
+                <p> {{ stream.about }} </p>
+            </div>
+        </aside>
+    </section>
